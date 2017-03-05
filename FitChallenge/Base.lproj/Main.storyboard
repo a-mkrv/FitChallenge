@@ -1,26 +1,151 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DNH-dj-t3u">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Food Collection View Controller-->
+        <scene sceneID="YgO-Wq-3c8">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <collectionViewController id="2rn-il-UYQ" customClass="FoodCollectionViewController" customModule="FitChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="W2z-0w-MEI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="guO-ZJ-UqL">
+                            <size key="itemSize" width="375" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="foodCell" id="tgs-Au-VQn" customClass="FoodCollectionCell" customModule="FitChallenge" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MH9-C4-mut">
+                                            <rect key="frame" x="0.0" y="0.0" width="373" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyc-HH-AvZ">
+                                            <rect key="frame" x="165" y="40" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <connections>
+                                    <outlet property="categoryImage" destination="MH9-C4-mut" id="NLq-NM-Whk"/>
+                                    <outlet property="categoryLabel" destination="fyc-HH-AvZ" id="dNH-oL-6tK"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="2rn-il-UYQ" id="k4U-Xv-o2x"/>
+                            <outlet property="delegate" destination="2rn-il-UYQ" id="Egl-3h-4cn"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="" image="cereals" id="hm8-Oc-aoD" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <inset key="imageInsets" minX="-1" minY="8" maxX="0.0" maxY="-9"/>
+                        <connections>
+                            <outlet property="animation" destination="zxg-pV-6cm" id="Iop-5f-XuA"/>
+                        </connections>
+                    </tabBarItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pCh-dC-XHc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="zxg-pV-6cm" customClass="RAMRightRotationAnimation" customModule="RAMAnimatedTabBarController"/>
             </objects>
+            <point key="canvasLocation" x="495" y="-545"/>
+        </scene>
+        <!--Exercise Collection View Controller-->
+        <scene sceneID="dcu-bk-Pvx">
+            <objects>
+                <collectionViewController id="XxN-5n-A9E" customClass="ExerciseCollectionViewController" customModule="FitChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ES5-Md-1kr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="O4Z-Nv-XJc">
+                            <size key="itemSize" width="373" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="exerciseCell" id="OjY-VT-eRt" customClass="ExerciseCollectionCell" customModule="FitChallenge" customModuleProvider="target">
+                                <rect key="frame" x="1" y="0.0" width="373" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="373" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qy9-SI-9eD">
+                                            <rect key="frame" x="0.0" y="0.0" width="373" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kR-aq-MUF">
+                                            <rect key="frame" x="165" y="40" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <connections>
+                                    <outlet property="categoryImage" destination="qy9-SI-9eD" id="yb0-rB-sPt"/>
+                                    <outlet property="categoryLabel" destination="5kR-aq-MUF" id="TDv-Rd-g1C"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="XxN-5n-A9E" id="oDX-WW-r8Q"/>
+                            <outlet property="delegate" destination="XxN-5n-A9E" id="LkO-rQ-9Cp"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="" image="user" id="rCG-sO-wqQ" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <inset key="imageInsets" minX="-2" minY="7" maxX="0.0" maxY="-9"/>
+                        <connections>
+                            <outlet property="animation" destination="ua3-IF-K87" id="7ry-Vj-lXA"/>
+                        </connections>
+                    </tabBarItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GhJ-JA-2BR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="ua3-IF-K87" customClass="RAMRightRotationAnimation" customModule="RAMAnimatedTabBarController"/>
+            </objects>
+            <point key="canvasLocation" x="494" y="143"/>
+        </scene>
+        <!--Animated Tab Bar Controller-->
+        <scene sceneID="oaE-Tv-bOB">
+            <objects>
+                <tabBarController id="DNH-dj-t3u" customClass="RAMAnimatedTabBarController" customModule="RAMAnimatedTabBarController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="ETy-y6-h8t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="XxN-5n-A9E" kind="relationship" relationship="viewControllers" id="GjD-dS-4po"/>
+                        <segue destination="2rn-il-UYQ" kind="relationship" relationship="viewControllers" id="IJf-GL-JAU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QQa-Jh-uS6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-468" y="-217"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cereals" width="32" height="32"/>
+        <image name="user" width="32" height="32"/>
+    </resources>
 </document>
