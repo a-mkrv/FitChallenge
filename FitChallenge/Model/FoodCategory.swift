@@ -8,6 +8,8 @@
 
 import Foundation
 
+let FoodCategoryArray = ["before training", "after training", "for day", "water"]
+
 class FoodCategory {
     
     let name: String

@@ -8,18 +8,22 @@
 
 import UIKit
 
-
 class ExerciseCollectionViewController: UICollectionViewController {
     
     let reuseIdentifier = "exerciseCell"
     var categories = [ExerciseCategory]()
+    var sex = "g"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let catArray = ["food" /*some categories*/]
-        
-        loadCategories(allCategories: catArray as NSArray)
+        loadCategories(allCategories: ExerciseCategoryArray as NSArray)
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
     }
     
     
@@ -46,8 +50,8 @@ class ExerciseCollectionViewController: UICollectionViewController {
         
         let category = categories[indexPath.row]
         
-        cell.categoryLabel.text = (category.name).capitalized
-        cell.categoryImage.image = UIImage(named: "\(category.image).jpg")
+        cell.categoryLabel.text = category.name.setTextSpaces(seperator: " ", afterEveryXChars: 1)
+        cell.categoryImage.image = UIImage(named: "\(sex)_\(category.image).jpg")
         
         return cell
     }

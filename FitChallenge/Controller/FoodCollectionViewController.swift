@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class FoodCollectionViewController: UICollectionViewController {
     
     private let reuseIdentifier = "foodCell"
@@ -17,9 +16,13 @@ class FoodCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let catArray = ["food" /*some categories*/]
-        
-        loadCategories(allCategories: catArray as NSArray)
+        loadCategories(allCategories: FoodCategoryArray as NSArray)
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
     }
     
     
@@ -46,7 +49,7 @@ class FoodCollectionViewController: UICollectionViewController {
         
         let category = categories[indexPath.row]
         
-        cell.categoryLabel.text = (category.name).capitalized
+        cell.categoryLabel.text = category.name.setTextSpaces(seperator: " ", afterEveryXChars: 1)
         cell.categoryImage.image = UIImage(named: "\(category.image).jpg")
         
         return cell

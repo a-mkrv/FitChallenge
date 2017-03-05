@@ -8,6 +8,8 @@
 
 import Foundation
 
+let ExerciseCategoryArray = ["chest", "arms", "shoulders", "back", "press", "legs"]
+
 class ExerciseCategory {
     
     let name: String
