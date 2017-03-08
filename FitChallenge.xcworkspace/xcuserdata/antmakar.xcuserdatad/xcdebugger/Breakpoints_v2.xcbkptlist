@@ -2,4 +2,310 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/RAMAnimatedTabBarController.swift"
+            timestampString = "510610234.566488"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
+            landmarkName = "setSelectIndex(from:to:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/RAMAnimatedTabBarController.swift"
+            timestampString = "510610378.943854"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "RAMAnimatedTabBarItem"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/Animations/BounceAnimation/RAMBounceAnimation.swift"
+            timestampString = "510611009.024913"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "selectedState(_:textLabel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/Animations/BounceAnimation/RAMBounceAnimation.swift"
+            timestampString = "510611011.453987"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "playBounceAnimation(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/Animations/RotationAnimation/RAMRotationAnimation.swift"
+            timestampString = "510611130.578217"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "selectedState(_:textLabel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/Animations/TransitionAniamtions/RAMTransitionItemAnimations.swift"
+            timestampString = "510611196.068759"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "deselectAnimation(_:textLabel:defaultTextColor:defaultIconColor:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RAMAnimatedTabBarController.RAMTransitionItemAnimations.deselectAnimation (__ObjC.UIImageView, textLabel : __ObjC.UILabel, defaultTextColor : __ObjC.UIColor, defaultIconColor : __ObjC.UIColor) -&gt; ()"
+                  moduleName = "RAMAnimatedTabBarController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antmakar/Projects/Swift%20:%20iOs/FitChallenge/Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/Animations/TransitionAniamtions/RAMTransitionItemAnimations.swift"
+                  timestampString = "510674945.678096"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RAMAnimatedTabBarController.RAMTransitionItemAnimations.deselectAnimation (__ObjC.UIImageView, textLabel : __ObjC.UILabel, defaultTextColor : __ObjC.UIColor, defaultIconColor : __ObjC.UIColor) -&gt; ()"
+                  moduleName = "RAMAnimatedTabBarController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antmakar/Projects/Swift%20:%20iOs/FitChallenge/Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/Animations/TransitionAniamtions/RAMTransitionItemAnimations.swift"
+                  timestampString = "510674945.681137"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/Animations/RotationAnimation/RAMRotationAnimation.swift"
+            timestampString = "510611368.52673"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "playRoatationAnimation(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RAMAnimatedTabBarController.RAMRotationAnimation.playRoatationAnimation (__ObjC.UIImageView) -&gt; ()"
+                  moduleName = "RAMAnimatedTabBarController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antmakar/Projects/Swift%20:%20iOs/FitChallenge/Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/Animations/RotationAnimation/RAMRotationAnimation.swift"
+                  timestampString = "510674945.687414"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "104"
+                  endingLineNumber = "104"
+                  offsetFromSymbolStart = "1550">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RAMAnimatedTabBarController.RAMRotationAnimation.playRoatationAnimation (__ObjC.UIImageView) -&gt; ()"
+                  moduleName = "RAMAnimatedTabBarController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antmakar/Projects/Swift%20:%20iOs/FitChallenge/Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/Animations/RotationAnimation/RAMRotationAnimation.swift"
+                  timestampString = "510674945.690467"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "104"
+                  endingLineNumber = "104"
+                  offsetFromSymbolStart = "1616">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/Animations/TransitionAniamtions/RAMTransitionItemAnimations.swift"
+            timestampString = "510612216.232539"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "selectedColor(_:textLabel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/Animations/RotationAnimation/RAMRotationAnimation.swift"
+            timestampString = "510612222.538884"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "selectedState(_:textLabel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/Animations/FumeAnimation/RAMFumeAnimation.swift"
+            timestampString = "510612415.6082"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "selectedState(_:textLabel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/Animations/FumeAnimation/RAMFumeAnimation.swift"
+            timestampString = "510612442.732369"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "playAnimation(_:textLabel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/Animations/FrameAnimation/RAMFrameItemAnimation.swift"
+            timestampString = "510612447.11339"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "selectedState(_:textLabel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/Animations/FrameAnimation/RAMFrameItemAnimation.swift"
+            timestampString = "510612452.036445"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "playAnimation(_:textLabel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/RAMAnimatedTabBarController.swift"
+            timestampString = "510612473.36753"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "changeSelectedColor(_:iconSelectedColor:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/Animations/BounceAnimation/RAMBounceAnimation.swift"
+            timestampString = "510612546.930264"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "playAnimation(_:textLabel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

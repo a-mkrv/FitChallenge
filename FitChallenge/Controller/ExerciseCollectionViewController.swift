@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AMScrollingNavbar
 
 class ExerciseCollectionViewController: UICollectionViewController {
     
@@ -16,6 +17,8 @@ class ExerciseCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.collectionView?.backgroundColor = shortRGB(r: 37, g: 42, b: 48)
+        title = "Exercises".setTextSpaces(seperator: " ", afterEveryXChars: 1)
         
         loadCategories(allCategories: ExerciseCategoryArray as NSArray)
     }
@@ -23,7 +26,27 @@ class ExerciseCollectionViewController: UICollectionViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.isNavigationBarHidden = true
+        
+        if let navigationController = self.navigationController as? ScrollingNavigationController {
+            navigationController.followScrollView(collectionView!, delay: 50.0)
+        }
+    }
+    
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        if let navigationController = navigationController as? ScrollingNavigationController {
+            navigationController.stopFollowingScrollView()
+        }
+    }
+    
+    
+    override func scrollViewShouldScrollToTop(_ scrollView: UIScrollView) -> Bool {
+        if let navigationController = navigationController as? ScrollingNavigationController {
+            navigationController.showNavbar(animated: true)
+        }
+        return true
     }
     
     

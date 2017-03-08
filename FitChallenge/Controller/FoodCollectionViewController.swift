@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AMScrollingNavbar
 
 class FoodCollectionViewController: UICollectionViewController {
     
@@ -15,14 +16,18 @@ class FoodCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        title = "Food".setTextSpaces(seperator: " ", afterEveryXChars: 1)
+
         loadCategories(allCategories: FoodCategoryArray as NSArray)
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.isNavigationBarHidden = true
+        
+        if let navigationController = self.navigationController as? ScrollingNavigationController {
+            navigationController.followScrollView(collectionView!, delay: 50.0)
+        }
     }
     
     

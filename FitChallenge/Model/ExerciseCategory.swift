@@ -8,7 +8,7 @@
 
 import Foundation
 
-let ExerciseCategoryArray = ["chest", "arms", "shoulders", "back", "press", "legs"]
+let ExerciseCategoryArray = ["press", "chest", "arms", "shoulders", "back", "legs"]
 
 class ExerciseCategory {
     
@@ -19,5 +19,4 @@ class ExerciseCategory {
         self.name = name
         self.image = photos
     }
-    
 }

@@ -1,0 +1,15 @@
+PODS:
+  - AMScrollingNavbar (3.2.0)
+  - RAMAnimatedTabBarController (2.0.13)
+
+DEPENDENCIES:
+  - AMScrollingNavbar
+  - RAMAnimatedTabBarController (~> 2.0.13)
+
+SPEC CHECKSUMS:
+  AMScrollingNavbar: cf603d4d5f11061d466a0878b9ada136248927b2
+  RAMAnimatedTabBarController: 2510f3b66954c3f77ea1042a35d34df8f5f3b604
+
+PODFILE CHECKSUM: e7bfd4396afc8caa6b74b22df2cb403851eb25ce
+
+COCOAPODS: 1.2.0

@@ -10,5 +10,6 @@ target 'FitChallenge' do
   # Pods for FitChallenge
 
   pod 'RAMAnimatedTabBarController', "~> 2.0.13"
-  
+  pod 'AMScrollingNavbar'
+
 end
