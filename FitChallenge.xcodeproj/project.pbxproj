@@ -19,6 +19,12 @@
 		77AC25071E6C11C100AC0A8D /* ExerciseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC25011E6C11C100AC0A8D /* ExerciseCategory.swift */; };
 		77AC25081E6C11C100AC0A8D /* ExerciseCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC25021E6C11C100AC0A8D /* ExerciseCollectionCell.swift */; };
 		77AC25291E6C332600AC0A8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77AC25281E6C332600AC0A8D /* Assets.xcassets */; };
+		77D1BAB61F2F2BB4009DBF4B /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D1BAB51F2F2BB4009DBF4B /* Protocols.swift */; };
+		77D1BAB81F2F313B009DBF4B /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D1BAB71F2F313B009DBF4B /* MainTabBarViewController.swift */; };
+		77D1BABC1F31ADC7009DBF4B /* PressPList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77D1BABB1F31ADC7009DBF4B /* PressPList.plist */; };
+		77D1BABE1F31ADEB009DBF4B /* ArmsPList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77D1BABD1F31ADEB009DBF4B /* ArmsPList.plist */; };
+		77D1BAC01F31BA09009DBF4B /* DetailExerciseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D1BABF1F31BA09009DBF4B /* DetailExerciseCollectionViewCell.swift */; };
+		77D1BAC21F339E3D009DBF4B /* DetailExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D1BAC11F339E3D009DBF4B /* DetailExerciseViewController.swift */; };
 		77D4D0361E45C2C3003D5A5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D4D0351E45C2C3003D5A5F /* AppDelegate.swift */; };
 		77D4D03B1E45C2C3003D5A5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D4D0391E45C2C3003D5A5F /* Main.storyboard */; };
 		77D4D03E1E45C2C3003D5A5F /* FitChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77D4D03C1E45C2C3003D5A5F /* FitChallenge.xcdatamodeld */; };
@@ -56,6 +62,12 @@
 		77AC25011E6C11C100AC0A8D /* ExerciseCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseCategory.swift; sourceTree = "<group>"; };
 		77AC25021E6C11C100AC0A8D /* ExerciseCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseCollectionCell.swift; sourceTree = "<group>"; };
 		77AC25281E6C332600AC0A8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77D1BAB51F2F2BB4009DBF4B /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		77D1BAB71F2F313B009DBF4B /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		77D1BABB1F31ADC7009DBF4B /* PressPList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PressPList.plist; sourceTree = "<group>"; };
+		77D1BABD1F31ADEB009DBF4B /* ArmsPList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ArmsPList.plist; sourceTree = "<group>"; };
+		77D1BABF1F31BA09009DBF4B /* DetailExerciseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailExerciseCollectionViewCell.swift; sourceTree = "<group>"; };
+		77D1BAC11F339E3D009DBF4B /* DetailExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailExerciseViewController.swift; sourceTree = "<group>"; };
 		77D4D0321E45C2C3003D5A5F /* FitChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77D4D0351E45C2C3003D5A5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77D4D03A1E45C2C3003D5A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -119,6 +131,7 @@
 				77AC25021E6C11C100AC0A8D /* ExerciseCollectionCell.swift */,
 				77AC24FE1E6C11C100AC0A8D /* FoodCollectionCell.swift */,
 				773EEC061E70306C002CCD4F /* RAMCustomAnimated.swift */,
+				77D1BABF1F31BA09009DBF4B /* DetailExerciseCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -130,8 +143,11 @@
 				77AC24FD1E6C11C100AC0A8D /* ExerciseCollectionViewController.swift */,
 				77E0F5361E6C68F90095CE2A /* ExerciseListViewController.swift */,
 				77AC24FF1E6C11C100AC0A8D /* FoodCollectionViewController.swift */,
+				77D1BAC11F339E3D009DBF4B /* DetailExerciseViewController.swift */,
 				773EEC021E702A5A002CCD4F /* StatisticsViewController.swift */,
 				773EEBFE1E7026F1002CCD4F /* UserProfileViewController.swift */,
+				77D1BAB51F2F2BB4009DBF4B /* Protocols.swift */,
+				77D1BAB71F2F313B009DBF4B /* MainTabBarViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -173,6 +189,8 @@
 				77D4D0351E45C2C3003D5A5F /* AppDelegate.swift */,
 				77AC25281E6C332600AC0A8D /* Assets.xcassets */,
 				77E0F5341E6C4B070095CE2A /* Extensions.swift */,
+				77D1BABD1F31ADEB009DBF4B /* ArmsPList.plist */,
+				77D1BABB1F31ADC7009DBF4B /* PressPList.plist */,
 				77D4D03C1E45C2C3003D5A5F /* FitChallenge.xcdatamodeld */,
 				77D4D0441E45C2C3003D5A5F /* Info.plist */,
 				77D4D0411E45C2C3003D5A5F /* LaunchScreen.storyboard */,
@@ -271,6 +289,7 @@
 				TargetAttributes = {
 					77D4D0311E45C2C3003D5A5F = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = RA8RP8Z7ML;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -312,11 +331,13 @@
 				77E0F5631E6C74BE0095CE2A /* before training.jpg in Resources */,
 				77E0F5641E6C74BE0095CE2A /* for day.jpg in Resources */,
 				77E0F5651E6C74BE0095CE2A /* water.jpg in Resources */,
+				77D1BABE1F31ADEB009DBF4B /* ArmsPList.plist in Resources */,
 				77E0F5751E6C78740095CE2A /* b_arms.jpg in Resources */,
 				77E0F57C1E6C78740095CE2A /* g_back.jpg in Resources */,
 				77D4D03B1E45C2C3003D5A5F /* Main.storyboard in Resources */,
 				77E0F57A1E6C78740095CE2A /* b_shoulders.jpg in Resources */,
 				77E0F5621E6C74BE0095CE2A /* after training.jpg in Resources */,
+				77D1BABC1F31ADC7009DBF4B /* PressPList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,19 +396,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77D1BAB61F2F2BB4009DBF4B /* Protocols.swift in Sources */,
 				77E0F5371E6C68F90095CE2A /* ExerciseListViewController.swift in Sources */,
 				773EEBFF1E7026F1002CCD4F /* UserProfileViewController.swift in Sources */,
 				773EEC051E702A63002CCD4F /* ChallengesViewController.swift in Sources */,
 				77AC25051E6C11C100AC0A8D /* FoodCollectionViewController.swift in Sources */,
+				77D1BAC21F339E3D009DBF4B /* DetailExerciseViewController.swift in Sources */,
 				77E0F5351E6C4B070095CE2A /* Extensions.swift in Sources */,
 				77AC25031E6C11C100AC0A8D /* ExerciseCollectionViewController.swift in Sources */,
 				77AC25041E6C11C100AC0A8D /* FoodCollectionCell.swift in Sources */,
 				77D4D03E1E45C2C3003D5A5F /* FitChallenge.xcdatamodeld in Sources */,
+				77D1BAB81F2F313B009DBF4B /* MainTabBarViewController.swift in Sources */,
 				77AC25061E6C11C100AC0A8D /* FoodCategory.swift in Sources */,
 				773EEC071E70306C002CCD4F /* RAMCustomAnimated.swift in Sources */,
 				77D4D0361E45C2C3003D5A5F /* AppDelegate.swift in Sources */,
 				77AC25081E6C11C100AC0A8D /* ExerciseCollectionCell.swift in Sources */,
 				77AC25071E6C11C100AC0A8D /* ExerciseCategory.swift in Sources */,
+				77D1BAC01F31BA09009DBF4B /* DetailExerciseCollectionViewCell.swift in Sources */,
 				773EEC031E702A5A002CCD4F /* StatisticsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,9 +537,10 @@
 			baseConfigurationReference = 67181C2CB82D1969A49165E6 /* Pods-FitChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RA8RP8Z7ML;
 				INFOPLIST_FILE = FitChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ITMak.FitChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = "ITMak.FitChallenge-0.1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -525,9 +551,10 @@
 			baseConfigurationReference = FC25E68F9ECA5219553B4F53 /* Pods-FitChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RA8RP8Z7ML;
 				INFOPLIST_FILE = FitChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ITMak.FitChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = "ITMak.FitChallenge-0.1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
