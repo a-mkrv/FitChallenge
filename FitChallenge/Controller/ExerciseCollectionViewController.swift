@@ -106,6 +106,7 @@ class ExerciseCollectionViewController: UICollectionViewController {
                 let path = Bundle.main.path(forResource: categories[(indexPath?.row)!].name.capitalizeFirst() + "PList", ofType: "plist")
                 if let path = path {
                     dictFromFile = (NSDictionary(contentsOfFile: path))!
+                    destinationController.nameOfView = categories[(indexPath?.row)!].name
                     destinationController.loadedData = dictFromFile
                 }
             }

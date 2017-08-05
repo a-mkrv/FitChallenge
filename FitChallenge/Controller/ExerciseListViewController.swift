@@ -14,7 +14,8 @@ class ExerciseListViewController: UICollectionViewController {
 
     var loadedData = NSDictionary()
     var exerciseOfCategory = [Exercise]()
-    
+    var nameOfView: String!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = false
@@ -47,12 +48,32 @@ class ExerciseListViewController: UICollectionViewController {
             ex.name = key as! String
             ex.type = val[0]
             ex.time = val[1]
+            ex.image = val[2]
             
-            for i in 2..<val.count {
+            for i in 3..<val.count {
                 ex.descript.append(val[i])
             }
             
             exerciseOfCategory.append(ex)
+        }
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let backItem = UIBarButtonItem()
+        backItem.title = nameOfView.uppercased().setTextSpaces(seperator: " ", afterEveryXChars: 1)
+        navigationItem.backBarButtonItem = backItem
+        
+        if segue.identifier == "goToDetailExercise" {
+            if let destinationController = segue.destination as? DetailExerciseViewController {
+                
+                let selectedIndex = self.collectionView?.indexPath(for: sender as! UICollectionViewCell)?.row
+
+                destinationController.typeEx = exerciseOfCategory[selectedIndex!].type
+                destinationController.timeEx = exerciseOfCategory[selectedIndex!].time
+                destinationController.stepByStep = exerciseOfCategory[selectedIndex!].descript
+                destinationController.imagePath = exerciseOfCategory[selectedIndex!].image
+            }
         }
     }
     
@@ -63,6 +84,9 @@ class ExerciseListViewController: UICollectionViewController {
         cell.imageOfExercise.layer.cornerRadius = 15.0
         cell.imageOfExercise.clipsToBounds = true
         
+        let image: UIImage = UIImage(named: exerciseOfCategory[indexPath.row].image)!
+        cell.imageOfExercise.image = image
+
         cell.nameOfExercise.text = exerciseOfCategory[indexPath.row].name
         cell.typeOfExercise.text = exerciseOfCategory[indexPath.row].type
         cell.timeForTrening.text = exerciseOfCategory[indexPath.row].time

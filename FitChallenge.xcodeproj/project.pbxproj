@@ -19,6 +19,7 @@
 		77AC25071E6C11C100AC0A8D /* ExerciseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC25011E6C11C100AC0A8D /* ExerciseCategory.swift */; };
 		77AC25081E6C11C100AC0A8D /* ExerciseCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC25021E6C11C100AC0A8D /* ExerciseCollectionCell.swift */; };
 		77AC25291E6C332600AC0A8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77AC25281E6C332600AC0A8D /* Assets.xcassets */; };
+		77CC1B621F33BB4C002BBD94 /* StepByStepExTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CC1B611F33BB4C002BBD94 /* StepByStepExTableViewCell.swift */; };
 		77D1BAB61F2F2BB4009DBF4B /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D1BAB51F2F2BB4009DBF4B /* Protocols.swift */; };
 		77D1BAB81F2F313B009DBF4B /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D1BAB71F2F313B009DBF4B /* MainTabBarViewController.swift */; };
 		77D1BABC1F31ADC7009DBF4B /* PressPList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77D1BABB1F31ADC7009DBF4B /* PressPList.plist */; };
@@ -62,6 +63,7 @@
 		77AC25011E6C11C100AC0A8D /* ExerciseCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseCategory.swift; sourceTree = "<group>"; };
 		77AC25021E6C11C100AC0A8D /* ExerciseCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseCollectionCell.swift; sourceTree = "<group>"; };
 		77AC25281E6C332600AC0A8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77CC1B611F33BB4C002BBD94 /* StepByStepExTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepByStepExTableViewCell.swift; sourceTree = "<group>"; };
 		77D1BAB51F2F2BB4009DBF4B /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		77D1BAB71F2F313B009DBF4B /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		77D1BABB1F31ADC7009DBF4B /* PressPList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PressPList.plist; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				77AC24FE1E6C11C100AC0A8D /* FoodCollectionCell.swift */,
 				773EEC061E70306C002CCD4F /* RAMCustomAnimated.swift */,
 				77D1BABF1F31BA09009DBF4B /* DetailExerciseCollectionViewCell.swift */,
+				77CC1B611F33BB4C002BBD94 /* StepByStepExTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				77D4D0361E45C2C3003D5A5F /* AppDelegate.swift in Sources */,
 				77AC25081E6C11C100AC0A8D /* ExerciseCollectionCell.swift in Sources */,
 				77AC25071E6C11C100AC0A8D /* ExerciseCategory.swift in Sources */,
+				77CC1B621F33BB4C002BBD94 /* StepByStepExTableViewCell.swift in Sources */,
 				77D1BAC01F31BA09009DBF4B /* DetailExerciseCollectionViewCell.swift in Sources */,
 				773EEC031E702A5A002CCD4F /* StatisticsViewController.swift in Sources */,
 			);
